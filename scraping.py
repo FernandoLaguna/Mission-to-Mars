@@ -128,7 +128,7 @@ def hemisphere_data(browser):
         # Use the base URL to create an absolute URL
         img_url = f'https://marshemispheres.com/{img_url_rel}'
         
-        hemispheres = {title:img_url}
+        hemispheres = {"title":title, "img_url":img_url}
 
         hemisphere_image_urls.append(hemispheres)
         browser.back()

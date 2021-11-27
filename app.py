@@ -22,8 +22,8 @@ def index():
     #mars = mongo.db.mars.find_one() uses PyMongo to find the "mars" collection in our database, which we will create when we convert our Jupyter scraping code to Python Script
    mars = mongo.db.mars.find_one()
    #tells Flask to return an HTML template using an index.html file, We'll create this file after we build the Flask routes. , 
-   # mars=mars) tells Python to use the "mars" collection in MongoDB
-   return render_template("index.html", mars=mars)
+   # moon=mars create a moon variable to use in index.html linkink it with mars = mongo.db.mars.find_one() 
+   return render_template("index.html", moon=mars)
 
 #defines the route that Flask will be using
 @app.route("/scrape")
